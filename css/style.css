@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+  background: #30394c url(../img/bg-main.jpg) center center no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif; }
+
+.ba-card {
+  width: 600px;
+  margin: 145px 180px 230px 175px; }
+  .ba-card__header {
+    background-color: #2b3040;
+    padding: 0 40px 0 50px;
+    font-size: 0px; }
+  .ba-card__tab {
+    display: inline-block;
+    width: 150px;
+    border-bottom: 2px solid #fff;
+    height: 115px;
+    margin-left: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    fill: #fff;
+    padding: 30px 0; }
+    .ba-card__tab:hover {
+      opacity: 0.5; }
+    .ba-card__tab:first-child {
+      margin-left: 0px; }
+    .ba-card__tab h2 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px 0;
+      margin: 0; }
+    .ba-card__tab--nonactive {
+      border-bottom: 2px solid transparent;
+      fill: #8d91a3;
+      color: #8d91a3; }
+  .ba-card__content {
+    background-color: #212534;
+    height: 430px;
+    color: #fff; }
+    .ba-card__content-tab h1 {
+      margin: 0; }
+    .ba-card__content-tab--nonactive {
+      display: none; }
+  .ba-card__poster {
+    width: 40%;
+    float: left;
+    display: inline-block;
+    padding: 50px 0px 0px 48px; }
+  .ba-card__rating {
+    margin-left: 30px; }
+    .ba-card__rating--star {
+      position: relative;
+      display: inline-block;
+      width: 105px;
+      font-size: 25px;
+      font-weight: 900; }
+      .ba-card__rating--star:before {
+        content: "★★★★★";
+        color: #4b536b; }
+    .ba-card__rating--highlight {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 900; }
+      .ba-card__rating--highlight:before {
+        content: '★★★★★';
+        color: #ffdd3f; }
+  .ba-card__game-info {
+    width: 60%;
+    float: right;
+    display: inline-block;
+    padding: 65px 40px 0px 0px;
+    position: relative;
+    font-size: 0; }
+    .ba-card__game-info h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #fff;
+      font-weight: 400; }
+    .ba-card__game-info h3 {
+      font-size: 14px;
+      margin: 0;
+      color: #fdfdfd;
+      padding-top: 9px;
+      font-weight: 400; }
+  .ba-card__game-description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #b7bacd;
+    font-weight: 400;
+    padding: 35px 0px 60px 0;
+    margin: 0; }
+  .ba-card__circle-rate {
+    position: absolute;
+    top: 55px;
+    right: 40px;
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    color: #aaadbb;
+    line-height: 66px;
+    border: 2px solid #787c9b;
+    border-radius: 50%;
+    text-align: center; }
+    .ba-card__circle-rate:after {
+      display: block;
+      position: absolute;
+      top: -6%;
+      left: -5%;
+      content: '';
+      height: 72px;
+      width: 72px;
+      border-top: 4px solid #11e095;
+      border-right: 4px solid #11e095;
+      border-bottom: 4px solid #11e095;
+      border-left: 4px solid transparent;
+      border-radius: 50%;
+      -webkit-transform: rotate(38deg);
+      -ms-transform: rotate(38deg);
+      transform: rotate(38deg); }
+  .ba-card__bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: start;
+    -ms-flex-line-pack: start;
+    align-content: start; }
+  .ba-card__cost {
+    display: inline-block;
+    width: 50%;
+    text-transform: uppercase; }
+    .ba-card__cost-sale {
+      font-size: 12px;
+      color: #fedc3f;
+      font-weight: 700;
+      margin: 0;
+      padding-bottom: 5px; }
+    .ba-card__cost-price {
+      font-size: 32px;
+      color: #fff;
+      font-weight: 400;
+      margin: 0; }
+      .ba-card__cost-price:before {
+        content: '$';
+        font-size: 32px;
+        color: #fff;
+        font-weight: 400; }
+  .ba-card__order {
+    display: inline-block;
+    width: 50%; }
+  .ba-card__button {
+    display: block;
+    width: 100%;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #13e28d;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 2px; }
+    .ba-card__button:hover {
+      border: 2px solid #13e28d;
+      color: #13e28d;
+      background-color: transparent; }
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
